@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cont-ctr {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+/* Card */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+  line-height: 2rem;
+}
+h3 {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  letter-spacing: 0.0071428571em;
+  color: #00000061;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+.card-content {
+  display: flex;
+  height: 7rem;
+}
+.img-cont {
+  width: 7rem;
+  height: 100%;
+}
+.img-cont img {
+  width: 100%;
+  height: 100%;
+}
+.card-data {
+  padding: 1rem;
+}
+.card-actions {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding: 0.5rem;
+}
+/* .card-action-btns{
+  
+} */
+.btn {
+  cursor: pointer;
+  height: 36px;
+  padding: 0 8px;
+  margin-right: 8px;
+  border: none;
+  background: none;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+  color: #6200ee;
+}
+.btn:hover {
+  background: #6200ee0a;
+  border-radius: 2px;
+}
+.card-action-icons {
+  margin-left: auto;
+  display: flex;
+}
+.icon {
+  cursor: pointer;
+  height: 48px;
+  width: 48px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  color: #00000099;
+}
+.icon:hover {
+  background: #0000000a;
+  border-radius: 50%;
+}
+
+/* CHips */
+.chips {
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.chips p {
+  color: #8a8a8a;
+  font-size: 0.8rem;
+}
+
+.chiplist {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.chiplist:hover {
+  border-bottom: 2px solid #333333;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: none;
+  flex: 1 0 200px;
+  padding: 0 1rem;
+}
+
+.chiplist:focus-within {
+  border-bottom: 2px solid #3f51b5;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.6rem 0.6rem 0.6rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 30px;
+  background-color: #e0e0e0;
+}
+
+.item .chip-cancel-icon {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #929292;
+}
+
+/* Drawer */
+.drawer-cont {
+  margin: 2rem auto;
+  padding: 0.5rem;
+  width: 256px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.drawer-heading {
+  padding: 0.5rem;
+}
+
+.drawer-heading h6 {
+  font-weight: 400;
+}
+
+.drawer-item {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+.drawer-item span {
+  margin-right: 2rem;
+}
+
+.drawer-item:hover {
+  color: rgba(98, 0, 238, 0.87);
+  background-color: rgba(237, 224, 255, 0.87);
+}
+
+/* top app bar */
+.top-app-bar {
+  margin: auto;
+  width: 80%;
+  min-width: 300px;
+  height: 64px;
+  display: flex;
+  color: #fff;
+  background-color: #6200ee;
+}
+
+.top-app-bar .left {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.top-app-bar .right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.top-app-bar button {
+  height: 48px;
+  width: 48px;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.top-app-bar button:hover {
+  border-radius: 50%;
+  background-color: rgb(239, 239, 239, 0.08);
+}
+
+/* Badge */
+.badges-cont {
+  margin: 2rem;
+}
+
+.badges-cont button {
+  height: 48px;
+  width: 100px;
+  background-color: #6200ee;
+  color: #fff;
+  border: transparent;
+  border-radius: 4px;
+  position: relative;
+}
+
+.badges-cont button span {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: purple;
+}
+
+/* Snackbar */
+.snackbar {
+  width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  background-color: #333333;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: #e5e5e5;
+}
+
+.snackbar .mes {
+  padding: 14px 16px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+.snackbar .actions {
+  margin-left: auto;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.snackbar .actions button {
+  background: transparent;
+  border: none;
+}
+
+.snackbar .retry {
+  color: #bb86f6;
+  font-weight: 500;
+  letter-spacing: 0.07;
+  line-height: 2rem;
+}
+
+.snackbar .close {
+  height: 36px;
+  width: 36px;
+}
+
+.snackbar .close span {
+  font-size: 18px;
+  color: #e5e5e5;
+}
+
+.snackbar .close:hover {
+  background-color: rgb(239, 239, 239, 0.08);
+  border-radius: 50%;
+}
+
+/* Dialog Box */
+.dialog-box {
+  max-height: 240px;
+  min-width: 240px;
+  max-width: 240px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%),
+    0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+}
+.dialog-box h2 {
+  margin: 0;
+  padding: 1rem 1.5rem 0;
+  color: rgba(0, 0, 0, 0.87);
+}
+.dialog-box p {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.dialog-actions {
+  height: 52px;
+  padding: 8px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.dialog-actions button {
+  margin-left: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
+  font-weight: 500;
+  border: none;
+  background: none;
+  color: #6200ee;
+  height: 36px;
+}
+.dialog-actions button:hover {
+  background: #6200ee0a;
+  border-radius: 2px;
+}
+
+/* Tab bar */
+.tab-bar {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+  height: 48px;
+}
+.tab-item {
+  padding: 0 2rem;
+}
+.tab-item {
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+  color: #646464;
+}
+.tab-item:hover {
+  background: #6200ee0a;
+  border-radius: 2px;
+}
+.tab-item:active {
+  background: #f2e7fe;
+}
+.selected {
+  color: #6200ee;
+  border-bottom: 2px solid #6200ee;
+}
